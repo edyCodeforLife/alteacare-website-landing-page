@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.new-altea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.new-altea-login-button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.0875px;
+    color: #43BEAE;
+    padding: 6px 24px;
+    border: 1.5px solid #43BEAE;
+    box-sizing: border-box;
+    border-radius: 17.1004px;
+    cursor: pointer;
+}
+
+.new-altea-login-button:hover {
+    transition: 1s;
+    color: white;
+    border: 1.5px solid white;
+    background-color: #43BEAE
+}
+
+.new-altea-loading {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.new-altea-menu-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.0875px;
+    color: #5C5E5F;
+    margin-right: 12px;
+}
+
+.new-altea-menu-item-active {
+    font-weight: 600;
+    color: #717579;
+}
+
+
+.new-altea-section-one {
+    background-color: white;
+}
+
+.new-altea-homepage-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 42px;
+    color: #4A4B4C;
+    margin-bottom: 16px;
+}
+
+.new-altea-homepage-subtitle {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    margin-bottom: 36px;
+
+    letter-spacing: 0.1px;
+
+    color: #535556;
+}
+
+.new-altea-button-primary {
+    background: #61C7B5;
+    border-radius: 36px;
+    color: white;
+    padding: 8px 37px;
+    font-family: Poppins;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    align-items: center;
+    letter-spacing: 0.0025em;
+    margin-bottom: 16px;
+}
+
+.new-altea-section-one-description {
+    padding: 100px;
+}
+
+img.new-altea-section-one-image {
+    width: 640px !important;
+}
+
+
+.new-altea-background-section-two {
+    background: linear-gradient(180deg, #F5F8FB 0%, #E8EFF2 35.8%);
+}
+
+/* SECTION DOCTOR SPECIALIZE */
+/* SECTION DOCTOR SPECIALIZE */
+/* SECTION DOCTOR SPECIALIZE */
+/* SECTION DOCTOR SPECIALIZE */
+/* SECTION DOCTOR SPECIALIZE */
+.section-doctor-specialize {}
+
+.section-doctor-specialize-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 0.15px;
+
+    color: #535556;
+    padding-top: 36px;
+}
+
+.new-altea-card {
+    background: #FFFFFF;
+    border-radius: 22px;
+    margin: 20px 40px 20px 0px;
+    padding: 36px 36px 0px 36px;
+    min-width: 202px;
+    min-height: 202px;
+    cursor: pointer;
+}
+
+.new-altea-card:hover {
+    background: #FFFFFF;
+    border: 2px solid #43BEAE;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+
+
+.new-altea-icon-of-doctor-specialize {
+    margin-bottom: 36px;
+}
+
+.new-altea-title-of-doctor-specialize {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.0875px;
+
+    color: #7C8081;
+
+}
+
+.new-altea-icon-of-doctor-specialize img {
+    width: 80px;
+}
+
+
+
+/* SECTION PROMO PROGRAM */
+/* SECTION PROMO PROGRAM */
+/* SECTION PROMO PROGRAM */
+/* SECTION PROMO PROGRAM */
+/* SECTION PROMO PROGRAM */
+.section-promo-program {
+
+    /* background: linear-gradient(180deg, #F5F8FB 0%, #E8EFF2 35.8%); */
+}
+
+.section-promo-program-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 0.15px;
+
+    color: #535556;
+    padding-top: 36px;
+}
+
+.new-altea-card-promo-program {
+    cursor: pointer;
+}
+
+.new-altea-card-promo-program img {
+    width: 570px;
+    margin: 20px 40px 20px 0px;
+}
+
+
+
+/* Slideshow */
+.slideshow-title {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 42px;
+    /* or 140% */
+
+
+    color: #4A4B4C;
+    margin-bottom: 12px;
+
+
+}
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+}
+
+.slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+
+/* Buttons */
+.slideshowDots {
+    margin-top: 100px;
+}
+
+.slideshowDot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 4px 0px;
+    background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+    background-color: #34CCBD;
+}
+
+
+.slideshow-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+
+.slideshow-card-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 0.15px;
+
+    color: #535556;
+    margin-bottom: 6px;
+}
+
+.slideshow-card-subtitle {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+
+    color: #535556;
+    margin-bottom: 12px;
+
+}
+
+.slideshow-main-image {
+    width: 500px;
+}

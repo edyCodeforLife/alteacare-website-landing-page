@@ -1,0 +1,5252 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1980px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.main {
+  height: 100vh;
+  overflow: auto;
+}
+
+.main .topbar nav {
+  background: #FFFFFF;
+  opacity: 0.9;
+  min-height: 66px;
+}
+
+.main .topbar nav .nav-item {
+  margin: 0px 8px;
+  align-self: center;
+}
+
+.main .topbar nav .nav-item .profile-user-login {
+  height: 32px;
+  background: #61C7B5;
+  border-radius: 8px;
+  padding: 0px 8px;
+}
+
+.main .topbar nav .nav-item .profile-user-login .icon img {
+  height: 22px;
+  width: 22px;
+}
+
+.main .topbar nav .nav-item .profile-user-login .username {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.main .topbar nav .nav-item .profile-user-login .profile-menu-dropdown {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+}
+
+.main .topbar nav .nav-item .profile-user-login .profile-menu-dropdown .profile-menu {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+  padding: 10px 20px;
+}
+
+.main .topbar nav .nav-item a, .main .topbar nav .nav-item span {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6B7588 !important;
+}
+
+.main .topbar nav .nav-item a.logout {
+  color: #f71b40 !important;
+}
+
+.main .topbar nav .nav-item img {
+  height: 32px;
+}
+
+.main .topbar nav .nav-item .download-link {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 22px;
+  color: #2C528B;
+  border: 1px solid #2C528B;
+  border-radius: 8px;
+  color: #2C528B !important;
+  padding: 4px 12px;
+}
+
+.main .banner {
+  background: #D6EDF7;
+  padding-top: 66px;
+}
+
+.main .banner .background {
+  position: relative;
+  background-image: url(./../img/banner-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.main .banner .background .left {
+  padding: 20px 0px;
+  padding-bottom: 220px;
+  min-width: 55%;
+}
+
+.main .banner .background .left h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 130%;
+  color: #3E8CB9;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.main .banner .background .left p {
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(44, 82, 139, 0.7);
+  padding-top: 8px;
+}
+
+.main .banner .background .left .download-btn img {
+  margin: 8px 0px;
+}
+
+.main .banner .background .left .download-btn #download-apk {
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 0px;
+  width: 50%;
+}
+
+.main .banner .background .right {
+  text-align: center;
+  padding: 23px 0px;
+  padding-top: 240px;
+  margin-left: -100px;
+}
+
+.main .banner .background .right img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.main .banner .background .cover {
+  position: absolute;
+  width: 100%;
+  padding-top: 10%;
+  background-image: url(./../img/banner-background-cover.png);
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main .new-banner {
+  padding-top: 66px;
+  position: relative;
+  background-image: url(./../img/new-banner-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main .new-banner .left img {
+  width: 100%;
+}
+
+.main .new-banner .right {
+  padding: 20px;
+}
+
+.main .new-banner .right img {
+  width: 100%;
+}
+
+.main .new-banner .right .banner-button {
+  background: #61C7B5;
+  padding: 16px 32px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+}
+
+.main .new-banner .right .banner-button:focus {
+  outline: none;
+}
+
+.main .how-to {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.main .how-to .title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+  margin-bottom: 16px;
+}
+
+.main .how-to .list {
+  margin: 0px -16px;
+}
+
+.main .how-to .list .item {
+  border: 1px solid #D6EDF7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  margin: 16px 15px;
+}
+
+.main .how-to .list .item .img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 272px;
+}
+
+.main .how-to .list .item .img img {
+  max-width: 100%;
+}
+
+.main .how-to .list .item .caption {
+  background: #3E8CB9;
+  padding: 24px 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main .how-to .list .item .caption h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.main .how-to .list .item .caption p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.main .download {
+  background-image: url(./../img/download-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 40px 0px;
+}
+
+.main .download .title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.main .download .download-btn {
+  margin-bottom: 20px;
+}
+
+.main .download .download-btn div {
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.main .download .download-btn div img {
+  max-width: 100%;
+}
+
+.main .download .list {
+  margin: 0px -16px;
+}
+
+.main .download .list .item {
+  margin: 16px 15px;
+}
+
+.main .download .list .item img {
+  width: 100%;
+}
+
+.main .article {
+  padding: 48px 0px;
+}
+
+.main .article .title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3A3A3C;
+}
+
+.main .article .view-all {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #61C7B5;
+}
+
+.main .article .view-all a {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #61C7B5;
+}
+
+.main .article .article-card {
+  background: #FFFFFF;
+  box-shadow: 0px 2.6px 3.9px rgba(58, 58, 60, 0.25);
+  border-radius: 10px;
+}
+
+.main .article .article-card .top {
+  height: 209px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main .article .article-card .bottom {
+  padding: 16px 20px;
+}
+
+.main .article .article-card .bottom .article-tags .tag {
+  display: inline-block;
+  background: #D6EDF6;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.main .article .article-card .bottom .article-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #2C528B;
+}
+
+.main .article .article-card .bottom .article-desc {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+  word-break: break-word;
+  text-align: justify;
+}
+
+.main .article .article-card .bottom .article-date {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8F90A6;
+}
+
+.main .article-detail {
+  min-height: 100vh;
+}
+
+.main .article-detail .tab-panel {
+  margin-top: 66px;
+  background: #FAFAFC;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 0px;
+}
+
+.main .article-detail .tab-panel a {
+  color: #3E8CB9;
+}
+
+.main .article-detail .article-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2C528B;
+}
+
+.main .article-detail .article-desc {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+  word-break: break-word;
+}
+
+.main .article-detail .article-topic {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 3px 6px;
+  background: #61C7B5;
+  border-radius: 20px;
+}
+
+.main .article-detail .article-topic a:hover {
+  color: #FFFFFF;
+}
+
+.main .article-detail .article-img img {
+  width: 100%;
+}
+
+.main .article-detail .article-img .img-desc {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 17px;
+  font-style: italic;
+  color: #AAAAAA;
+}
+
+.main .article-detail .article-tags .tag {
+  display: inline-block;
+  background: #D6EDF6;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.main .article-detail .article-category {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 3px 6px;
+}
+
+.main .article-detail .cover {
+  width: 100%;
+}
+
+.main .article-detail .cover img {
+  width: 100%;
+}
+
+.main .article-detail .cover .download-button {
+  text-align: center;
+}
+
+.main .article-detail .cover .download-button button {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 8px 20px;
+  border: none;
+}
+
+.main .article-detail .cover .download-button button:focus {
+  outline: none;
+}
+
+.main .article-detail .description {
+  min-width: 60%;
+}
+
+.main .article-detail .description .content {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+}
+
+.main .article-detail .description .description-header {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3A3A3C;
+}
+
+.main .article-detail .pagination .note {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.main .article-detail .pagination .page {
+  display: flex;
+  flex-direction: column;
+  height: 34px;
+  width: 34px;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #3A3A3C;
+  padding: 8px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px 4px;
+  -webkit-filter: drop-shadow(0px 3px 4px rgba(58, 58, 60, 0.25));
+  filter: drop-shadow(0px 3px 4px rgba(58, 58, 60, 0.25));
+}
+
+.main .article-detail .pagination .page.active {
+  background: #3E8CB9;
+  color: #FFFFFF;
+}
+
+.main .article-detail .content {
+  font-size: 0.85rem;
+}
+
+.main .article-detail .content h1 {
+  font-size: 1.25rem !important;
+}
+
+.main .article-detail .content h2 {
+  font-size: 1.15rem !important;
+}
+
+.main .article-detail .content h3 {
+  font-size: 1.05rem !important;
+}
+
+.main .article-detail .content h4 {
+  font-size: 0.95rem !important;
+}
+
+.main .article-detail .content h5 {
+  font-size: 0.85rem !important;
+}
+
+.main .article-detail .content a {
+  color: #007bff;
+}
+
+.main .article-detail .article-meta {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+  margin: 16px 0px;
+}
+
+.main .article-detail .add-more {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+  border: 1px solid #3E8CB9;
+  border-radius: 6px;
+  padding: 16px 32px;
+  background-color: transparent;
+}
+
+.main .article-detail .add-more:focus {
+  outline: none;
+}
+
+.main .article-detail .article-filter {
+  position: relative;
+}
+
+.main .article-detail .article-filter input[name=search] {
+  background: #FFFFFF;
+  border: 1px solid #EBEBF0;
+  box-shadow: 0px 0px 4px #D6EDF6;
+  border-radius: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+  padding: 12px;
+  width: 100%;
+  max-width: 700px;
+  padding-left: 50px;
+}
+
+.main .article-detail .article-filter input[name=search]:focus {
+  outline: none;
+}
+
+.main .article-detail .article-filter .search-icon {
+  position: absolute;
+  top: 18%;
+  left: 14px;
+}
+
+.main .article-detail .article-filter-subscribe button {
+  padding: 12px 36px;
+  border: none;
+  width: 100%;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  background: #3E8CB9;
+  border-radius: 6px;
+}
+
+.main .article-detail .article-filter-subscribe button:focus {
+  outline: none;
+}
+
+.main .article-detail .article-subscribe {
+  max-width: 340px;
+}
+
+.main .article-detail .article-subscribe button {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 8px;
+  background: #3E8CB9;
+  border-radius: 6px;
+  border: none;
+}
+
+.main .article-detail .article-subscribe button:focus {
+  outline: none;
+}
+
+.main .article-detail .article-label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.main .article-detail .article-label .tag-circle {
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.main .article-detail .article-label .tag-circle a:hover {
+  color: inherit;
+}
+
+.main .article-detail .article-label .tag-circle-blue {
+  background: #D6EDF6;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+  margin-right: 8px;
+}
+
+.main .article-detail .article-label .tag-circle-blue a:hover {
+  color: inherit;
+}
+
+.main .article-detail .tab-list button {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #61C7B5;
+  border: 1px solid #61C7B5;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 145px;
+  width: 100%;
+  background: transparent;
+}
+
+.main .article-detail .tab-list button:focus {
+  outline: none;
+}
+
+.main .article-detail .tab-list button.active {
+  background: #61C7B5;
+  color: #FFFFFF;
+}
+
+.main .article-detail .article-share {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.main .article-detail .article-action .like .like-qty {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #6B7588;
+}
+
+.main .article-detail.with-shadow {
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+}
+
+.main .ebook-detail-page {
+  min-height: 100vh;
+}
+
+.main .ebook-detail-page .tab-panel {
+  margin-top: 66px;
+  background: #FAFAFC;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 10px 0px;
+}
+
+.main .ebook-detail-page .tab-panel a {
+  color: #3E8CB9;
+}
+
+.main .ebook-detail-page .article-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2C528B;
+}
+
+.main .ebook-detail-page .article-desc {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+  word-break: break-word;
+}
+
+.main .ebook-detail-page .article-img img {
+  width: 100%;
+}
+
+.main .ebook-detail-page .article-img .img-desc {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 17px;
+  font-style: italic;
+  color: #AAAAAA;
+}
+
+.main .ebook-detail-page .article-tags .tag {
+  display: inline-block;
+  background: #D6EDF6;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.main .ebook-detail-page .article-category {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 3px 6px;
+}
+
+.main .ebook-detail-page .article-category a:hover {
+  color: #FFFFFF;
+}
+
+.main .ebook-detail-page .cover {
+  width: 100%;
+}
+
+.main .ebook-detail-page .cover img {
+  width: 100%;
+}
+
+.main .ebook-detail-page .cover .download-button {
+  text-align: center;
+}
+
+.main .ebook-detail-page .cover .download-button button {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 8px 20px;
+  border: none;
+  white-space: nowrap;
+}
+
+.main .ebook-detail-page .cover .download-button button:focus {
+  outline: none;
+}
+
+.main .ebook-detail-page .description {
+  min-width: 60%;
+}
+
+.main .ebook-detail-page .description .content {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+}
+
+.main .ebook-detail-page .description .description-header {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3A3A3C;
+}
+
+.main .ebook-detail-page .content {
+  font-size: 0.85rem;
+}
+
+.main .ebook-detail-page .content h1 {
+  font-size: 1.25rem !important;
+}
+
+.main .ebook-detail-page .content h2 {
+  font-size: 1.15rem !important;
+}
+
+.main .ebook-detail-page .content h3 {
+  font-size: 1.05rem !important;
+}
+
+.main .ebook-detail-page .content h4 {
+  font-size: 0.95rem !important;
+}
+
+.main .ebook-detail-page .content h5 {
+  font-size: 0.85rem !important;
+}
+
+.main .ebook-detail-page .article-meta {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+  margin: 16px 0px;
+}
+
+.main .ebook-detail-page .add-more {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+  border: 1px solid #3E8CB9;
+  border-radius: 6px;
+  padding: 16px 32px;
+  background-color: transparent;
+}
+
+.main .ebook-detail-page .add-more:focus {
+  outline: none;
+}
+
+.main .ebook-detail-page .article-filter {
+  position: relative;
+}
+
+.main .ebook-detail-page .article-filter input[name=search] {
+  background: #FFFFFF;
+  border: 1px solid #EBEBF0;
+  box-shadow: 0px 0px 4px #D6EDF6;
+  border-radius: 20px;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7588;
+  padding: 12px;
+  width: 100%;
+  max-width: 700px;
+  padding-left: 50px;
+}
+
+.main .ebook-detail-page .article-filter input[name=search]:focus {
+  outline: none;
+}
+
+.main .ebook-detail-page .article-filter .search-icon {
+  position: absolute;
+  top: 18%;
+  left: 14px;
+}
+
+.main .ebook-detail-page .article-label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.main .ebook-detail-page .article-label .tag-circle {
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.main .ebook-detail-page .article-share {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.main .ebook-detail-page .article-action .like .like-qty {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 14px;
+  color: #6B7588;
+}
+
+.main .ebook-detail-page .ebook-topics {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.main .ebook-detail-page .ebook-topics .topic-label {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 3px 6px;
+  margin: 12px 0px;
+  margin-right: 12px;
+}
+
+.main .ebook-detail-page .ebook-topics .topic-label-all {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #61C7B5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .popular-article .title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A3A3C;
+}
+
+.main .popular-article .article-img {
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+}
+
+.main .popular-article .article-img .article-img-wrapper {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #3A3A3C 98.44%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 350px;
+  border-radius: 8px;
+}
+
+.main .popular-article .article-img .article-img-wrapper .article-img-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 18px 20px;
+  border-radius: 8px;
+}
+
+.main .popular-article .article-small-list {
+  max-width: 315px;
+}
+
+.main .popular-article .article-small-list .article-small .article-small-img {
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.main .popular-article .article-small-list .article-small .article-small-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 130%;
+  color: #2C528B;
+}
+
+.main .topic-article .title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A3A3C;
+}
+
+.main .topic-article .view-all {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #61C7B5;
+}
+
+.main .topic-article .view-all:hover {
+  cursor: pointer;
+}
+
+.main .topic-article .topic-splide {
+  margin: 0 -20px;
+}
+
+.main .topic-article .topic-splide .topic-item {
+  padding: 20px;
+}
+
+.main .topic-article .topic-splide .topic-item .topic-img {
+  height: 240px;
+  width: 240px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.main .topic-article .topic-splide .topic-item .topic-title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+  margin-top: 8px;
+  max-width: 240px;
+}
+
+.main .ebook-article .title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A3A3C;
+}
+
+.main .ebook-article .title-2 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3A3A3C;
+}
+
+.main .ebook-article .view-all {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #61C7B5;
+}
+
+.main .ebook-article .view-all:hover {
+  cursor: pointer;
+}
+
+.main .ebook-article .ebook-splide {
+  margin: 0 -20px;
+}
+
+.main .ebook-article .ebook-item {
+  padding: 20px;
+}
+
+.main .ebook-article .ebook-item .ebook-item-wrapper {
+  width: 320px;
+  max-width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2.6px 3.9px rgba(58, 58, 60, 0.25);
+  border-radius: 10px;
+}
+
+.main .ebook-article .ebook-item .ebook-img {
+  height: 230px;
+  width: 145px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.main .ebook-article .ebook-item .ebook-right {
+  padding: 16px;
+}
+
+.main .ebook-article .ebook-item .ebook-right .ebook-title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2C528B;
+  max-width: 161px;
+}
+
+.main .ebook-article .ebook-item .ebook-right .ebook-date {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+  white-space: nowrap;
+}
+
+.main .ebook-article .ebook-item .ebook-right .ebook-detail button {
+  white-space: nowrap;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #61C7B5;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.main .newest-article .title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #3A3A3C;
+}
+
+.main .newest-article .tags-title {
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.main .newest-article .tags-title span {
+  background: #D6EDF6;
+  border-radius: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+  padding: 6px 12px;
+  margin: 0px 8px;
+  display: inline-block;
+}
+
+.main .newest-article .article-card {
+  background: #FFFFFF;
+  box-shadow: 0px 2.6px 3.9px rgba(58, 58, 60, 0.25);
+  border-radius: 10px;
+}
+
+.main .newest-article .article-card .top {
+  height: 209px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main .newest-article .article-card .bottom {
+  padding: 16px 20px;
+}
+
+.main .newest-article .article-card .bottom .article-tags .tag {
+  display: inline-block;
+  background: #D6EDF6;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.main .newest-article .article-card .bottom .article-title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #2C528B;
+}
+
+.main .newest-article .article-card .bottom .article-date {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8F90A6;
+}
+
+.main .about-us {
+  padding: 60px 0px;
+}
+
+.main .about-us .left {
+  min-width: 40%;
+}
+
+.main .about-us .left .wrapper {
+  background: #F2F2F5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .about-us .left .wrapper img {
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 25% 20px;
+}
+
+.main .about-us .middle {
+  min-width: 120px;
+}
+
+.main .about-us .right {
+  padding: 20px 0px;
+}
+
+.main .about-us .right h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.main .about-us .right p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #3A3A3C;
+}
+
+.main .contact-us {
+  padding: 40px 0px;
+}
+
+.main .contact-us .left {
+  min-width: 45%;
+}
+
+.main .contact-us .left h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.main .contact-us .left form .form-field {
+  padding: 12px 0px;
+}
+
+.main .contact-us .left form .form-field label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #8F90A6;
+}
+
+.main .contact-us .left form .form-field input, .main .contact-us .left form .form-field textarea {
+  background: #FFFFFF;
+  border: 1px solid #DDE5E9;
+  border-radius: 6px;
+  padding: 20px 32px;
+  width: 100%;
+  resize: none;
+}
+
+.main .contact-us .left form .form-field button {
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 0px;
+  width: 100%;
+}
+
+.main .contact-us .middle {
+  min-width: 40px;
+}
+
+.main .contact-us .right .img {
+  text-align: center;
+}
+
+.main .contact-us .right .img img {
+  max-width: 100%;
+}
+
+.main .contact-us .right .contact .left-contact .item {
+  margin: 20px 0px;
+}
+
+.main .contact-us .right .contact .left-contact .item .label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.main .contact-us .right .contact .left-contact .item .content {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  color: #2C528B;
+}
+
+.main .contact-us .right .contact .middle-contact {
+  min-width: 40px;
+}
+
+.main .contact-us .right .contact .right-contact img {
+  margin: 4px;
+}
+
+.main footer {
+  font-family: "Open Sans", sans-serif;
+  background: #D6EDF6;
+  padding-top: 40px;
+}
+
+.main footer .footer-subscribe {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.main footer .footer-subscribe .subscribe-button {
+  font-family: "Inter";
+  border: none;
+  background: #61C7B5;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main footer .footer-subscribe .subscribe-button:focus {
+  outline: none;
+}
+
+.main footer .footer-sitemap a {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2C528B;
+}
+
+.main footer .footer-contact {
+  font-size: 12px;
+  line-height: 14px;
+  color: #2C528B;
+}
+
+.main footer .footer-download strong {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2C528B;
+}
+
+.main footer .copyright {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #2C528B;
+  padding: 12px;
+  width: 100%;
+}
+
+.main #comment-modal .modal-content {
+  border: none;
+  border-radius: 0px;
+}
+
+.main #comment-modal .modal-body {
+  padding: 0px;
+}
+
+.main #comment-modal .modal-body .head {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+}
+
+.main #comment-modal .modal-body .head .head-title {
+  padding: 0.3em;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2C528B;
+}
+
+.main #comment-modal .modal-body .head .modal-close {
+  color: #F00;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.main #comment-modal .modal-body .head .modal-close:focus {
+  outline: none;
+}
+
+.main #comment-modal .modal-body .head .modal-close:hover {
+  cursor: pointer;
+}
+
+.main #comment-modal .modal-body .comment-content {
+  padding: 12px 16px;
+}
+
+.main #comment-modal .modal-body .comment-content .no-comment {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #8F90A6;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input {
+  padding: 8px 0px;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input input, .main #comment-modal .modal-body .comment-content .comment-input textarea {
+  background: #FFFFFF;
+  border: 1px solid #DDE5E9;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #3A3A3C;
+  width: 100%;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input input:focus, .main #comment-modal .modal-body .comment-content .comment-input textarea:focus {
+  outline: none;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input .blue-button {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding: 10px 14px;
+  background: #3E8CB9;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input .blue-button:focus {
+  outline: none;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input .red-button {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  padding: 10px 14px;
+  background: #f71b40;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-input .red-button:focus {
+  outline: none;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-guest {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #8F90A6;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-guest strong {
+  font-weight: 600;
+  color: #2C528B;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list {
+  border-bottom: 1px solid #EBEBF0;
+  padding-top: 12px;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-name {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-opt .dropdown-item-red {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FF5C5C;
+  padding: 8px 0px;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-opt:hover {
+  cursor: pointer;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-date {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-text {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #3A3A3C;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-action .comment-reply-qty {
+  font-family: Inter;
+  font-size: 12px;
+  color: #6B7588;
+  line-height: 15px;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-list .comment-action .comment-reply-text {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 15px;
+  color: #61C7B5;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-replies {
+  border-left: 2px solid #DDE5E9;
+  padding-left: 16px;
+  margin: 16px 0px;
+}
+
+.main #comment-modal .modal-body .comment-content .reply-list .comment-name {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+}
+
+.main #comment-modal .modal-body .comment-content .reply-list .comment-opt .dropdown-item-red {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FF5C5C;
+  padding: 8px 0px;
+}
+
+.main #comment-modal .modal-body .comment-content .reply-list .comment-opt:hover {
+  cursor: pointer;
+}
+
+.main #comment-modal .modal-body .comment-content .reply-list .comment-date {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+}
+
+.main #comment-modal .modal-body .comment-content .reply-list .comment-text {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #3A3A3C;
+}
+
+.main #comment-modal .modal-body .comment-content .comment-user {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+}
+
+.main #comment-modal .modal-body .comment-content .spinner-border {
+  height: 0.8rem;
+  width: 0.8rem;
+  font-size: 12px;
+  bottom: 2px;
+}
+
+.main #subscriber-modal .modal-content {
+  border: none;
+}
+
+.main #subscriber-modal .modal-body {
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+  height: 80vh;
+  padding: 0px;
+}
+
+.main #subscriber-modal .modal-body .select-topic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main #subscriber-modal .modal-body .select-topic .title {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list {
+  overflow-y: auto;
+  padding: 20px 0px;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list::-webkit-scrollbar-thumb {
+  background: #61C7B5;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list .topic-item {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list .topic-item .checkbox {
+  display: flex;
+  color: #FFFFFF;
+  max-height: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  min-width: 18px;
+  border: solid #DDE5E9 2px;
+  border-radius: 2px;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list .topic-item .topic-name {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .select-topic .selection-list .topic-item.active .checkbox {
+  border: solid #61C7B5 2px;
+  background-color: #61C7B5;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic {
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-topic-img img {
+  max-width: 100%;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-topic-title {
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 120%;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-topic-desc {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-input-form {
+  padding: 8px 0px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-input-form input {
+  background: #FFFFFF;
+  border: 1px solid #DDE5E9;
+  border-radius: 6px;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-input-form input:focus {
+  outline: none;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-note-form .checkbox-item {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-note-form .checkbox-item .checkbox {
+  display: flex;
+  justify-content: center;
+  color: transparent;
+  max-height: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  min-width: 18px;
+  border: solid #3E8CB9 1px;
+  border-radius: 2px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-note-form .checkbox-item.active .checkbox {
+  border: solid #61C7B5 1px;
+  background-color: #61C7B5;
+  color: #FFFFFF;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-note-form .checkbox-note {
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3A3A3C;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-note-form .checkbox-note a {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .subscribe-topic .subscribe-topic-form .subscribe-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.main #subscriber-modal .modal-body .subscribe-done {
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-done .subscribe-topic-img img {
+  max-width: 100%;
+}
+
+.main #subscriber-modal .modal-body .subscribe-done .subscribe-topic-title {
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 120%;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body .subscribe-done .subscribe-topic-desc {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.main #subscriber-modal .modal-body button.close {
+  float: none !important;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #F00;
+}
+
+.main #subscriber-modal .modal-body .subscribe-button {
+  background: #61C7B5;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+}
+
+.main #subscriber-modal .modal-body .subscribe-button:disabled {
+  background: #C7C9D9;
+}
+
+.vaccine-2 {
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine-2 .main-page p.blue-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 .vaccine-location-select-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .vaccine-location-select-page .choose-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .vaccine-location-select-page .card-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+  border-radius: 12.8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #3E8CB9;
+  padding: 12px 8px;
+  min-width: 128px;
+}
+
+.vaccine-2 .vaccine-location-select-page .card-select .img {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .vaccine-location-select-page .blue-text {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine {
+  padding: 12px 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine p {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #6B7588;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine p.blue-subtext {
+  color: #3E8CB9;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine .custom-blue-input {
+  background: #D6EDF7;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine .form-group {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.vaccine-2 .vaccine-location-select-page .company-vaccine .color-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine-2 .vaccine-location-select-page .general-vaccine {
+  padding: 12px 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.vaccine-2 .vaccine-location-select-page .general-vaccine .text {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #8F90A6;
+}
+
+.vaccine-2 .vaccine-location-select-page .general-vaccine .border-button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+  background: #FFFFFF;
+  border: 1px solid #61C7B5;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.vaccine-2 .hospital-selection-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .hospital-selection-page .topbar {
+  background-color: #D6EDF7;
+}
+
+.vaccine-2 .hospital-selection-page .blue-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .hospital-selection-page .card-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+  border-radius: 12.8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #3E8CB9;
+  padding: 12px 8px;
+  min-width: 128px;
+}
+
+.vaccine-2 .hospital-selection-page .card-select .img {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .hospital-selection-page .select-hospital {
+  background-color: #D6EDF7;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.vaccine-2 .hospital-selection-page .select-hospital p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .hospital-selection-page .action {
+  background-color: #FFFFFF;
+  padding: 4px 16px;
+}
+
+.vaccine-2 .hospital-selection-page .action button {
+  width: 100%;
+}
+
+.vaccine-2 .hospital-selection-page .caption {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2C528B;
+  margin-top: 8px;
+}
+
+.vaccine-2 .hospital-selection-page .schedule {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .hospital-selection-page .schedule .program-name {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .hospital-selection-page .schedule .date, .vaccine-2 .hospital-selection-page .schedule .hour {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .hospital-selection-page .schedule .note {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #EE0000;
+}
+
+.vaccine-2 .patient-data-form-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .patient-data-form-page .topbar {
+  background-color: #D6EDF7;
+}
+
+.vaccine-2 .patient-data-form-page .blue-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .patient-data-form-page .card-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+  border-radius: 12.8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #3E8CB9;
+  padding: 12px 8px;
+  min-width: 128px;
+}
+
+.vaccine-2 .patient-data-form-page .card-select .img {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-data-form-page .select-hospital {
+  background-color: #D6EDF7;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.vaccine-2 .patient-data-form-page .select-hospital p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-data-form-page .select-hospital .note .text {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+}
+
+.vaccine-2 .patient-data-form-page .action {
+  background-color: #FFFFFF;
+  padding: 4px 16px;
+}
+
+.vaccine-2 .patient-data-form-page .action button {
+  width: 100%;
+}
+
+.vaccine-2 .patient-data-form-page .caption {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2C528B;
+  margin-top: 8px;
+}
+
+.vaccine-2 .patient-data-form-page .schedule {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-data-form-page .schedule .program-name {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-data-form-page .schedule .date, .vaccine-2 .patient-data-form-page .schedule .hour {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-data-form-page .schedule .note {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #EE0000;
+}
+
+.vaccine-2 .patient-edit-form-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .patient-edit-form-page .blue-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .patient-edit-form-page .card-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+  border-radius: 12.8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #3E8CB9;
+  padding: 12px 8px;
+  min-width: 128px;
+}
+
+.vaccine-2 .patient-edit-form-page .card-select .img {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-edit-form-page .select-hospital {
+  background-color: #D6EDF7;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.vaccine-2 .patient-edit-form-page .select-hospital p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page .action {
+  background-color: #FFFFFF;
+  padding: 4px 16px;
+}
+
+.vaccine-2 .patient-edit-form-page .action button {
+  width: 100%;
+}
+
+.vaccine-2 .patient-edit-form-page .caption {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2C528B;
+  margin-top: 8px;
+}
+
+.vaccine-2 .patient-edit-form-page .schedule {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-edit-form-page .schedule .program-name {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page .schedule .date, .vaccine-2 .patient-edit-form-page .schedule .hour {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page .schedule .note {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #EE0000;
+}
+
+.vaccine-2 .patient-edit-form-page-2 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .topbar {
+  background-color: #D6EDF7;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .blue-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .card-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+  border-radius: 12.8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #3E8CB9;
+  padding: 12px 8px;
+  min-width: 128px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .card-select .img {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .select-hospital {
+  background-color: #D6EDF7;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .select-hospital p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .action {
+  background-color: #FFFFFF;
+  padding: 4px 16px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .action button {
+  width: 100%;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .caption {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2C528B;
+  margin-top: 8px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .schedule {
+  padding: 8px 0px;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .schedule .program-name {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .schedule .date, .vaccine-2 .patient-edit-form-page-2 .schedule .hour {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-edit-form-page-2 .schedule .note {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 130%;
+  color: #EE0000;
+}
+
+.vaccine-2 .patient-detail-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.vaccine-2 .patient-detail-page p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page p.blue-text {
+  color: #2C528B;
+}
+
+.vaccine-2 .patient-detail-page .hospital-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .program-vaccine {
+  font-size: 14px;
+  line-height: 170%;
+  color: #6B7588;
+}
+
+.vaccine-2 .patient-detail-page .program-name {
+  font-size: 16px;
+  line-height: 170%;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .white-button {
+  padding: 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 .patient-detail-page .fullname {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+}
+
+.vaccine-2 .patient-detail-page .nik, .vaccine-2 .patient-detail-page .birthdate, .vaccine-2 .patient-detail-page .gender, .vaccine-2 .patient-detail-page .phone, .vaccine-2 .patient-detail-page .email, .vaccine-2 .patient-detail-page .address {
+  font-size: 16px;
+  line-height: 170%;
+  color: #6B7588;
+}
+
+.vaccine-2 .patient-detail-page .text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .red-notice {
+  background: #D6EDF7;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #ED2323;
+  padding: 16px;
+}
+
+.vaccine-2 .patient-detail-page .red-warning-notice {
+  background: #FFD1D1;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #ED2323;
+  padding: 16px;
+}
+
+.vaccine-2 .patient-detail-page .green-notice {
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #06C270;
+  padding: 16px;
+}
+
+.vaccine-2 .patient-detail-page .vaccine-no {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .schedule-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .schedule-date {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .edit-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .patient-detail-page .term {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-detail-page .action {
+  padding: 12px 16px;
+  background-color: #FFFFFF;
+}
+
+.vaccine-2 .patient-detail-page .action .border-button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+  background: #FFFFFF;
+  border: 1px solid #61C7B5;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.vaccine-2 .patient-detail-page .action .color-button {
+  background: #C7C9D9;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  padding: 11px;
+  border: none;
+  width: 100%;
+}
+
+.vaccine-2 .patient-detail-page .action .color-button.active {
+  background: #61C7B5;
+}
+
+.vaccine-2 .screening-welcome-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .screening-welcome-page .container {
+  max-width: 400px;
+}
+
+.vaccine-2 .screening-welcome-page p.blue-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 .screening-welcome-page p.blue-sub-text {
+  font-size: 14px;
+  line-height: 170%;
+  text-align: center;
+  color: #2C528B;
+}
+
+.vaccine-2 .screening-welcome-page .top-img {
+  padding: 8px 16px;
+}
+
+.vaccine-2 .screening-welcome-page .top-img img {
+  width: 100%;
+}
+
+.vaccine-2 .screening-welcome-page .middle-img {
+  padding: 8px 16px;
+}
+
+.vaccine-2 .screening-welcome-page .middle-img img {
+  width: 100%;
+}
+
+.vaccine-2 .screening-vaccine-no-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+}
+
+.vaccine-2 .screening-vaccine-no-page .wrapper {
+  background-image: url(./../img/screening-background.png);
+  background-position: 50% -15%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.vaccine-2 .screening-vaccine-no-page .wrapper .topbar {
+  background-color: #87CDE9;
+}
+
+.vaccine-2 .screening-vaccine-no-page .wrapper .container {
+  max-width: 400px;
+}
+
+.vaccine-2 .screening-vaccine-no-page .img {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.vaccine-2 .screening-vaccine-no-page .img img {
+  width: 80%;
+}
+
+.vaccine-2 .screening-vaccine-no-page .question {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+  padding: 30px 20px;
+}
+
+.vaccine-2 .screening-vaccine-no-page .answer .form-group {
+  padding: 4px 0px;
+  text-align: center;
+}
+
+.vaccine-2 .screening-vaccine-no-page .answer .form-group button.color-button {
+  width: 80%;
+  margin: 4px 0px;
+}
+
+.vaccine-2 .screening-alergic-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+}
+
+.vaccine-2 .screening-alergic-page .wrapper {
+  background-image: url(./../img/screening-background-2.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.vaccine-2 .screening-alergic-page .wrapper .topbar {
+  background-color: #87CDE9;
+}
+
+.vaccine-2 .screening-alergic-page .wrapper .stepbar {
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.vaccine-2 .screening-alergic-page .wrapper .container {
+  max-width: 400px;
+  max-height: 550px;
+}
+
+.vaccine-2 .screening-alergic-page .img {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.vaccine-2 .screening-alergic-page .img img {
+  width: 80%;
+}
+
+.vaccine-2 .screening-alergic-page .question {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+  padding: 30px 20px;
+  height: 200px;
+  overflow: auto;
+}
+
+.vaccine-2 .screening-alergic-page .answer {
+  display: flex;
+}
+
+.vaccine-2 .screening-alergic-page .answer button.yes {
+  background: #3E8CB9;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #FFFFFF;
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+}
+
+.vaccine-2 .screening-alergic-page .answer button.no {
+  background: #61C7B5;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: #FFFFFF;
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+}
+
+.vaccine-2 .screening-success-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .screening-success-page .img {
+  text-align: center;
+}
+
+.vaccine-2 .screening-success-page .img img {
+  width: 80%;
+}
+
+.vaccine-2 .screening-success-page .notice {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 .screening-success-page .text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.vaccine-2 .screening-success-page .color-button {
+  width: 100%;
+}
+
+.vaccine-2 .screening-failed-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .screening-failed-page .img {
+  text-align: center;
+}
+
+.vaccine-2 .screening-failed-page .img img {
+  width: 80%;
+}
+
+.vaccine-2 .screening-failed-page .notice {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #EB5757;
+}
+
+.vaccine-2 .screening-failed-page .text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.vaccine-2 .screening-failed-page .color-button {
+  width: 60%;
+}
+
+.vaccine-2 .screening-failed-page .container {
+  max-width: 400px;
+}
+
+.vaccine-2 .schedule-select-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .schedule-select-page .top {
+  background-image: url(./../img/schedule-select-img.png);
+  background-position: bottom;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  align-self: center;
+  max-width: 400px;
+}
+
+.vaccine-2 .schedule-select-page .top .text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar {
+  background: #FFFFFF;
+  border-radius: 6px 6px 0px 0px;
+  padding: 24px 0px;
+  padding-top: 16px;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .month {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+  display: flex;
+  justify-content: center;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .weekday {
+  display: flex;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .weekday .day {
+  flex-grow: 1;
+  flex-basis: 0;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .date-list .date {
+  display: flex;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .date-list .date .item {
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4px;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .date-list .date .item.inactive {
+  background: #F2F2F5;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .date-list .date .item.active {
+  background: #61C7B5;
+}
+
+.vaccine-2 .schedule-select-page .bottom .calendar .date-list .date .item.block {
+  background: #C21807;
+}
+
+.vaccine-2 .schedule-passed {
+  opacity: 0.7;
+}
+
+.vaccine-2 #hour-select-modal .caption, .vaccine-2 #first-schedule-hour-select-modal .caption, .vaccine-2 #second-schedule-hour-select-modal .caption {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 #hour-select-modal .date-selected, .vaccine-2 #first-schedule-hour-select-modal .date-selected, .vaccine-2 #second-schedule-hour-select-modal .date-selected {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+}
+
+.vaccine-2 #hour-select-modal .calendar-ask, .vaccine-2 #first-schedule-hour-select-modal .calendar-ask, .vaccine-2 #second-schedule-hour-select-modal .calendar-ask {
+  font-size: 16px;
+  line-height: 170%;
+  text-align: center;
+  color: #3A3A3C;
+}
+
+.vaccine-2 #hour-select-modal .hour-list, .vaccine-2 #first-schedule-hour-select-modal .hour-list, .vaccine-2 #second-schedule-hour-select-modal .hour-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3.5px;
+  margin-right: -3.5px;
+}
+
+.vaccine-2 #hour-select-modal .hour-list .hour, .vaccine-2 #first-schedule-hour-select-modal .hour-list .hour, .vaccine-2 #second-schedule-hour-select-modal .hour-list .hour {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.5px;
+  line-height: 15px;
+  color: #62C8B6;
+  padding: 4px 6px;
+  background: #FFFFFF;
+  border: 0.886111px solid #62C8B6;
+  border-radius: 3.54444px;
+  margin: 3.5px;
+  flex-basis: 30.945%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vaccine-2 #hour-select-modal .hour-list .hour.active, .vaccine-2 #first-schedule-hour-select-modal .hour-list .hour.active, .vaccine-2 #second-schedule-hour-select-modal .hour-list .hour.active {
+  color: #FFFFFF;
+  background-color: #61C7B5;
+}
+
+.vaccine-2 #hour-select-modal .color-button, .vaccine-2 #first-schedule-hour-select-modal .color-button, .vaccine-2 #second-schedule-hour-select-modal .color-button {
+  background: #C7C9D9;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  padding: 11px;
+  border: none;
+  width: 100%;
+}
+
+.vaccine-2 #hour-select-modal .color-button.active, .vaccine-2 #first-schedule-hour-select-modal .color-button.active, .vaccine-2 #second-schedule-hour-select-modal .color-button.active {
+  background: #61C7B5;
+}
+
+.vaccine-2 #hour-select-modal .red-outline-color-button, .vaccine-2 #first-schedule-hour-select-modal .red-outline-color-button, .vaccine-2 #second-schedule-hour-select-modal .red-outline-color-button {
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #ED2323;
+  padding: 11px;
+  border: 1px solid #FF5C5C;
+  width: 100%;
+}
+
+.vaccine-2 #hour-select-modal .note, .vaccine-2 #first-schedule-hour-select-modal .note, .vaccine-2 #second-schedule-hour-select-modal .note {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #8F90A6;
+}
+
+.vaccine-2 .confirmation-detail-page {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.vaccine-2 .confirmation-detail-page .img {
+  text-align: center;
+}
+
+.vaccine-2 .confirmation-detail-page .img img {
+  width: 80%;
+}
+
+.vaccine-2 .confirmation-detail-page .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-2 .confirmation-detail-page .label {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+}
+
+.vaccine-2 .confirmation-detail-page .label.bold {
+  font-weight: bold;
+}
+
+.vaccine-2 .confirmation-detail-page .grey-text {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.vaccine-2 .confirmation-detail-page .deal {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .confirmation-detail-page .deal-text {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2C528B;
+}
+
+.vaccine-2 .confirmation-detail-page .note {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine-2 .confirmation-detail-page .color-button {
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  padding: 11px;
+  border: none;
+  width: 100%;
+}
+
+.vaccine-2 .confirmation-detail-page .white-delete-button {
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FF5C5C;
+  padding: 11px;
+  border: none;
+  width: 100%;
+}
+
+.vaccine-2 .stepbar {
+  display: flex;
+  padding: 0px 12px;
+}
+
+.vaccine-2 .stepbar .step {
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0px 2px;
+}
+
+.vaccine-2 .stepbar .step.active {
+  background-color: #3E8CB9;
+}
+
+.vaccine-2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #6B7588;
+  margin-bottom: 0px;
+}
+
+.vaccine-2 .add-new-patient {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+}
+
+.vaccine-2 .add-new-patient .text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+}
+
+.vaccine-2 .patient-card {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+
+
+.vaccine-2 .patient-card .program-name,
+.vaccine-2 .patient-card .hospital-name,
+.vaccine-2 .patient-card .fullname {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .patient-card .nik,
+.vaccine-2 .patient-card .birthdate,
+.vaccine-2 .patient-card .gender,
+.vaccine-2 .patient-card .phone,
+.vaccine-2 .patient-card .email {
+  font-size: 16px;
+  line-height: 170%;
+  color: #6B7588;
+}
+
+
+
+.vaccine-2 .patient-card .text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+
+.vaccine-2 .patient-card .white-button {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+  padding: 16px 0px;
+}
+
+
+.vaccine-2 .patient-card .green-notice {
+  background: #D6EDF7;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #06C270;
+  padding: 16px;
+}
+
+
+.vaccine-2 .patient-card .red-notice {
+  background: #D6EDF7;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #ED2323;
+  padding: 16px;
+}
+
+
+.vaccine-2 .patient-card .red-warning-notice {
+  background: #FFD1D1;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #ED2323;
+  padding: 16px;
+}
+
+
+
+.vaccine-2 .patient-card .view-detail {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+  margin-top: 8px;
+  padding: 8px 0px;
+}
+
+
+
+.vaccine-2 .patient-card .vaccine-no {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+
+
+.vaccine-2 .patient-card .schedule-text {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #6B7588;
+}
+
+
+
+
+.vaccine-2 .patient-card .vaccine-date {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+  position: relative;
+  top: 5px;
+}
+
+
+
+
+.vaccine-2 #main-carousel {
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.vaccine-2 #main-carousel .carousel-indicators {
+  bottom: auto;
+  top: -16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.vaccine-2 #main-carousel .carousel-indicators li {
+  background-color: #87CDE9;
+  height: 12px;
+  min-width: 12px;
+  max-width: 12px;
+  border-radius: 50%;
+}
+
+.vaccine-2 #main-carousel .carousel-indicators li.active {
+  background-color: #3E8CB9;
+}
+
+.vaccine-2 .topbar {
+  min-height: 56px;
+  display: flex;
+}
+
+.vaccine-2 .topbar .arrow {
+  align-self: center;
+}
+
+.vaccine-2 .topbar .text {
+  justify-content: center;
+  align-self: center;
+  flex-grow: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #2C528B;
+}
+
+.vaccine-2 .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine-2 .form-group label, .vaccine-2 .form-group .checkbox-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.vaccine-2 .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.vaccine-2 .form-group .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.vaccine-2 .form-group .react-datepicker-wrapper .react-datepicker__input-container input {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+}
+
+.vaccine-2 .form-group .react-datepicker__input-container input {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+}
+
+.vaccine-2 .form-group .red-button {
+  padding: 11px;
+  background: #B22222;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine-2 .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine-2 .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine-2 .form-group .filename {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  overflow-wrap: anywhere;
+}
+
+.vaccine-2 .form-group .filesize {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #8F90A6;
+}
+
+.vaccine-2 .form-group .fileview {
+  font-size: 14px;
+  text-align: center;
+  color: #61C7B5;
+}
+
+.vaccine-2 .form-group .filedelete {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ED2323;
+}
+
+.vaccine-2 .form-group .identity-preview-img {
+  width: 100%;
+}
+
+.vaccine-2 .form-group .select-radio {
+  display: flex;
+}
+
+.vaccine-2 .form-group .select-radio .selection {
+  display: flex;
+  margin-right: 12px;
+}
+
+.vaccine-2 .form-group .select-radio .selection .option-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #61C7B5;
+  padding: 4px;
+  margin-right: 8px;
+}
+
+.vaccine-2 .form-group .select-radio .selection .option-icon .option-round {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.vaccine-2 .form-group .select-radio .selection .option-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.vaccine-2 .form-group .select-radio .selection.active .option-icon .option-round {
+  background: #3E8CB9;
+}
+
+.vaccine-2 .form-group .select-radio .selection.disabled {
+  opacity: 0.5;
+}
+
+.vaccine-2 .form-group .option-checkbox {
+  display: flex;
+}
+
+.vaccine-2 .form-group .option-checkbox .checkbox {
+  border: 1px solid #C7C9D9;
+  border-radius: 2px;
+  height: 18px;
+  width: 18px;
+  margin-right: 8px;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.vaccine-2 .form-group .option-checkbox.active .checkbox {
+  border-color: #61C7B5;
+  color: #FFFFFF;
+  background-color: #61C7B5;
+}
+
+.vaccine-2 .form-group input:disabled {
+  background-color: #DDE5E9;
+}
+
+.vaccine-2 .form-group select:disabled {
+  background-color: #DDE5E9;
+}
+
+.vaccine-2 .form-group textarea {
+  border: none;
+}
+
+.vaccine-2 .form-group textarea:disabled {
+  background-color: #DDE5E9;
+}
+
+.vaccine-2 .overflow {
+  overflow: auto;
+}
+
+.vaccine-2 .modal-dialog-bottom {
+  display: flex;
+  align-items: flex-end;
+  min-height: 100%;
+  margin: 0px;
+}
+
+.vaccine-2 .container {
+  max-width: 400px;
+}
+
+.vaccine-2 .container-new {
+  max-width: 400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.vaccine-2 .modal-dialog {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vaccine-2 .modal-dialog .modal-body img {
+  max-width: 100%;
+}
+
+.vaccine-2 .radio-uncheck, .vaccine-2 .radio-check, .vaccine-2 .radio-disabled {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.vaccine-2 .radio-uncheck {
+  border: 1px solid #C7C9D9;
+  border-radius: 2px;
+}
+
+.vaccine-2 .radio-check {
+  border: 1px solid #61C7B5;
+  border-radius: 2px;
+  background-color: #61C7B5;
+  color: #FFFFFF;
+}
+
+.vaccine-2 .radio-disabled {
+  border: 1px solid #C7C9D9;
+  border-radius: 2px;
+  background-color: #C7C9D9;
+  color: #FFFFFF;
+}
+
+.gradient-blue {
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+}
+
+.splide__arrow--prev {
+  left: -3em !important;
+}
+
+.splide__arrow--next {
+  right: -3em !important;
+}
+
+.vaccine p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #6B7588;
+  margin-bottom: 0px;
+}
+
+.vaccine p.blue-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine .add-new-patient {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+}
+
+.vaccine .add-new-patient .text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+}
+
+.vaccine .topbar {
+  height: 56px;
+  display: flex;
+}
+
+.vaccine .topbar .arrow {
+  align-self: center;
+}
+
+.vaccine .topbar .text {
+  justify-content: center;
+  align-self: center;
+  flex-grow: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #2C528B;
+}
+
+.vaccine .vaccine-type .button-list {
+  text-align: center;
+}
+
+.vaccine .vaccine-type .button-list .outline-button {
+  padding: 11px;
+  outline: none;
+  border: 1px solid #2C528B;
+  border-radius: 6px;
+  font-weight: 700;
+  background-color: transparent;
+  min-width: 196px;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+  margin: 8px 0px;
+}
+
+.vaccine .vaccine-type .button-list .outline-button.active {
+  background: #9AE2F0;
+}
+
+.vaccine .vaccine-type .button-list .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 196px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .vaccine-type .button-list .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .vaccine-type .subheader {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+  border-bottom: 1px solid #E0E0E0;
+  margin-top: 24px;
+  padding: 6px 24px;
+}
+
+.vaccine .vaccine-type .registration-list .not-found {
+  font-family: "Inter", sans-serif;
+  min-height: 120px;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #BDBDBD;
+}
+
+.vaccine .vaccine-type .registration-list .item {
+  padding: 10px 0px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.vaccine .vaccine-type .registration-list .item .status {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  margin-bottom: 8px;
+}
+
+.vaccine .vaccine-type .registration-list .item .status.blue {
+  color: #2C528B;
+}
+
+.vaccine .vaccine-type .registration-list .item .status.red {
+  color: #EB5757;
+}
+
+.vaccine .vaccine-type .registration-list .item .left .registrant {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #6B7588;
+  margin-bottom: 3px;
+}
+
+.vaccine .vaccine-type .registration-list .item .left .identity {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+}
+
+.vaccine .vaccine-type .registration-list .item .right button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+  border: 1px solid #61C7B5;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 8px;
+  min-width: 112px;
+}
+
+.vaccine .first-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .first-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .first-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .first-page .form-group .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.vaccine .first-page .form-group .react-datepicker-wrapper .react-datepicker__input-container input {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+}
+
+.vaccine .first-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .first-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .first-page .form-group .filename {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  overflow-wrap: anywhere;
+}
+
+.vaccine .first-page .form-group .filesize {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #8F90A6;
+}
+
+.vaccine .first-page .form-group .fileview {
+  font-size: 14px;
+  text-align: center;
+  color: #61C7B5;
+}
+
+.vaccine .first-page .form-group .filedelete {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ED2323;
+}
+
+.vaccine .first-page .form-group #identity-preview-img {
+  width: 100%;
+}
+
+.vaccine .second-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .second-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .second-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .second-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .second-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .third-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .third-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .third-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .third-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .third-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .fourth-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .fourth-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .fourth-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .fourth-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .fourth-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .fifth-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .fifth-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .fifth-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .fifth-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .fifth-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .six-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .six-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .six-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .six-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .six-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .seventh-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .seventh-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .seventh-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .seventh-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .seventh-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .eight-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine .eight-page h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.vaccine .eight-page .term {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8F90A6;
+  overflow: auto;
+}
+
+.vaccine .eight-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .eight-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .eight-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .eight-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .eight-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .eight-page .agreement {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4F4F4F;
+}
+
+.vaccine .ninth-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine .ninth-page .img {
+  text-align: center;
+}
+
+.vaccine .ninth-page h5 {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #3E8CB9;
+}
+
+.vaccine .ninth-page p {
+  margin-top: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.vaccine .ninth-page .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .tenth-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine .tenth-page .header-2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #61C7B5;
+  padding: 19px 0px;
+}
+
+.vaccine .tenth-page .note {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #6B7588;
+}
+
+.vaccine .tenth-page .note .rs {
+  color: #2C528B;
+}
+
+.vaccine .tenth-page .form-group {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.vaccine .tenth-page .form-group label {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  margin-bottom: 6px;
+}
+
+.vaccine .tenth-page .form-group .input-field {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+  background-color: inherit;
+}
+
+.vaccine .tenth-page .form-group .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.vaccine .tenth-page .form-group .react-datepicker-wrapper .react-datepicker__input-container input {
+  padding: 16px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #4F4F4F;
+  width: 100%;
+}
+
+.vaccine .tenth-page .form-group .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .tenth-page .form-group .color-button.disabled {
+  background: #BDBDBD;
+}
+
+.vaccine .tenth-page .form-group .hour-list {
+  margin: 0px -4px;
+}
+
+.vaccine .tenth-page .form-group .hour-list .item {
+  margin: 4px 3px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #62C8B6;
+  padding: 4px 6px;
+  min-width: 92px;
+  border: 0.8px solid #62C8B6;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.vaccine .tenth-page .form-group .hour-list .item.active {
+  background: #61C7B5;
+  color: #FFFFFF;
+}
+
+.vaccine .tenth-page .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .eleventh-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine .eleventh-page .header-2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #61C7B5;
+  padding: 19px 0px;
+}
+
+.vaccine .eleventh-page h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2C528B;
+  margin-bottom: 1px;
+}
+
+.vaccine .eleventh-page label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+  margin-bottom: 0px;
+  display: block;
+  margin-top: 4px;
+}
+
+.vaccine .eleventh-page ul {
+  padding-left: 1.5em;
+}
+
+.vaccine .eleventh-page .value {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F4F4F;
+}
+
+.vaccine .eleventh-page .note {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2C528B;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.vaccine .eleventh-page .note2 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3E8CB9;
+  padding-top: 16px;
+}
+
+.vaccine .eleventh-page .note3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #3E8CB9;
+  padding-top: 25px;
+}
+
+.vaccine .eleventh-page .color-button {
+  padding: 11px;
+  background: #61C7B5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 126px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  border: none;
+  margin: 8px 0px;
+}
+
+.vaccine .radio {
+  display: flex;
+  margin: 6px 0px;
+}
+
+.vaccine .radio .circle {
+  margin-right: 12px;
+}
+
+.vaccine .radio .circle .icon {
+  border: 1px solid #61C7B5;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.vaccine .radio .circle .icon .active {
+  background: #3E8CB9;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  align-self: center;
+}
+
+.vaccine .radio .text {
+  align-self: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.vaccine .checkbox {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #61C7B5;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 16px;
+  min-width: 16px;
+}
+
+.vaccine .checkbox .icon {
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.vaccine .checkbox.active {
+  background-color: #61C7B5;
+}
+
+.vaccine .loading {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.vaccine-certificate {
+  height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 11.3%, #D6EDF6 98.21%);
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccine-certificate .topbar {
+  height: 56px;
+  display: flex;
+}
+
+.vaccine-certificate .topbar .arrow {
+  align-self: center;
+}
+
+.vaccine-certificate .topbar .text {
+  justify-content: center;
+  align-self: center;
+  flex-grow: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: #2C528B;
+}
+
+.vaccine-certificate .content {
+  flex-grow: 1;
+  overflow: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.vaccine-certificate .content .img-logo {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.vaccine-certificate .content .img-logo img {
+  width: 100%;
+  max-width: 240px;
+}
+
+.vaccine-certificate .content .img-logo-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #2C528B;
+  margin-top: 5px;
+}
+
+.vaccine-certificate .content .form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+  margin-bottom: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+.vaccine-certificate .content .form-group .upload-certificate-button {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vaccine-certificate .content .form-group .upload-certificate-button .left {
+  align-self: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #61C7B5;
+}
+
+.vaccine-certificate .content .form-group .upload-certificate-button .left-active {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #2C528B;
+}
+
+.vaccine-certificate .content .form-group .upload-certificate-button .arrow {
+  align-self: center;
+  color: #6B7588;
+}
+
+.vaccine-certificate .content h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: #2C528B;
+}
+
+.vaccine-certificate .content .upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #FAFAFC;
+  border: 1px dashed #C7C9D9;
+  border-radius: 8px;
+  max-height: 100%;
+  max-width: 100%;
+  height: 158px;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vaccine-certificate .content .upload-form .upload-text {
+  font-size: 16px;
+  line-height: 170%;
+  text-align: center;
+  color: #2C528B;
+  position: relative;
+  top: 1px;
+}
+
+.vaccine-certificate .content .upload-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 158px;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vaccine-certificate .content .upload-data img {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.vaccine-certificate .content .upload-data .action {
+  margin-top: 8px;
+}
+
+.vaccine-certificate .content .upload-data .action .view {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #61C7B5;
+}
+
+.vaccine-certificate .content .upload-data .action .delete {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ED2323;
+}
+
+.vaccine-certificate .content #cert-view-modal #identity-preview-img {
+  width: 100%;
+}
+
+.vaccine-certificate .loading {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2.swal2-title {
+  font-size: 1.4em;
+}
+
+textarea {
+  resize: none;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.95;
+}
+
+#about-us, #contact-us, #download {
+  scroll-margin-top: 65px;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+button .spinner-border {
+  position: relative;
+  bottom: 3px;
+}
+
+#auth-modal .content {
+  padding: 30px 0px;
+}
+
+#auth-modal .content .subheader {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  padding: 24px 0px;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#auth-modal .content .form .form-group {
+  margin-bottom: 1.25rem;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#auth-modal .content .form .form-group input, #auth-modal .content .form .form-group select {
+  background: #FFFFFF;
+  border: 1px solid #828282;
+  border-radius: 6px;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  width: 100%;
+  color: #4F4F4F;
+}
+
+#auth-modal .content .form .form-group input:focus, #auth-modal .content .form .form-group select:focus {
+  outline: none;
+}
+
+#auth-modal .content .form .form-group button.submit {
+  background: #61C7B5;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  padding: 10px;
+  border: none;
+}
+
+#auth-modal .content .form .form-group button.submit:focus {
+  outline: none;
+}
+
+#auth-modal .content .form .form-group .form-password {
+  display: flex;
+  border: 1px solid #828282;
+  border-radius: 6px;
+}
+
+#auth-modal .content .form .form-group .form-password input {
+  border: none;
+}
+
+#auth-modal .content .form .form-group .form-password .eye-icon {
+  padding: 0px 16px;
+  align-self: center;
+}
+
+#auth-modal .content .form .forgot-password {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #3868B0;
+}
+
+#auth-modal .content .form .no-account {
+  font-size: 14px;
+  line-height: 19px;
+  color: #3868B0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#auth-modal .spinner-border {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .topbar nav {
+    opacity: 1;
+  }
+
+  .main .topbar nav .nav-item {
+    align-self: flex-start;
+  }
+
+  .main .topbar nav .nav-item .profile-user-login {
+    height: auto;
+    margin-top: 8px;
+  }
+
+  .main .topbar nav .nav-item img {
+    margin: 8px 0px;
+  }
+
+  .main .topbar nav .navbar-brand img.altea-logo {
+    max-height: 28px;
+  }
+
+  .main .topbar nav .navbar-brand img.mitra-logo {
+    max-height: 24px;
+  }
+
+  .main .topbar nav .navbar-brand img.menkes-logo {
+    max-height: 28px !important;
+  }
+
+  .main .banner .background {
+    background-size: auto;
+    padding-bottom: 5em;
+  }
+
+  .main .banner .background .left {
+    padding-bottom: 80px;
+  }
+
+  .main .banner .background .right {
+    padding-top: 80px;
+    margin-left: 0px;
+  }
+
+  .main .article-detail .article-filter-subscribe {
+    width: 100%;
+  }
+
+  .main .article-detail .article-filter-subscribe button {
+    width: 100%;
+  }
+
+  .main .contact-us .right {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .main .topic-article .topic-splide {
+    justify-content: center;
+    margin: 0 0px;
+  }
+
+  .main .topic-article .topic-splide .topic-item {
+    width: 100%;
+  }
+
+  .main .topic-article .topic-splide .topic-item .topic-img {
+    width: 100%;
+  }
+
+  .main .topic-article .topic-splide .topic-item .topic-title {
+    max-width: inherit;
+  }
+
+  .main .ebook-article .ebook-item {
+    padding: 20px 0px;
+  }
+
+  .main .ebook-article .ebook-item .ebook-item-wrapper {
+    width: 100%;
+  }
+
+  .main .ebook-article .ebook-splide {
+    margin: 0 0px;
+  }
+
+  .main .ebook-article .ebook-splide .splide__slide {
+    width: 100%;
+  }
+
+  .main footer .footer-logo {
+    text-align: left;
+  }
+
+  .main #subscriber-modal .modal-body {
+    height: auto;
+  }
+
+  .main #subscriber-modal .modal-body .select-topic .selection-list {
+    max-height: 400px;
+  }
+
+  .splide__arrow--prev {
+    left: 0em !important;
+  }
+
+  .splide__arrow--next {
+    right: 0em !important;
+  }
+}
+
+
+
+/* Fajar New Vaksin Styling */
+
+.container-mobile {
+  margin-left: 14px;
+}
+
+.homepage-daftar-pasien {
+  display: flex;
+  flex-direction: row;
+  min-height: 75vh;
+}
+
+.homepage-daftar-pasien .primary {
+  width: 95%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+}
+
+.homepage-daftar-pasien .shadow {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 5%;
+  right: 0;
+  margin-left: 14px;
+}
+
+/* Pasien card */
+
+.data-pasien {
+  display: flex;
+  flex-direction: row;
+  min-height: 75vh;
+}
+
+.data-pasien .data-pasien-saat-ini {
+  width: 95%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-radius: 6px;
+  padding: 30px 20px 20px 20px;
+}
+
+.data-pasien .data-pasien-shadow {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(143, 144, 166, 0.1);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 5%;
+  right: 0;
+  margin-left: 14px;
+}
+
+/* FORM DATA PASIEN */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.data-pasien .data-pasien-saat-ini .primary-font {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #3A3A3C;
+}
+
+.data-pasien .data-pasien-saat-ini .text {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3A3A3C;
+  margin-top: 4px;
+}
+
+
+
+
+.data-pasien .data-pasien-saat-ini .secondary-font {
+  font-size: 16px;
+  line-height: 170%;
+  color: #6B7588;
+}
+
+
+
+
+.isi-kuisioner-container-pending {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background: #D6EDF6;
+  color: #2C528B;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.isi-kuisioner-container-rejected {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background: #FFD1D1;
+  color: #D12B2B;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.isi-kuisioner-container-accepted {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background: #D6EDF6;
+  color: #06C270;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.isi-kuisioner-container-updated {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background: #D6EDF6;
+  color: #2C528B;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+/*  button effect */
+.draw-border {
+  /* box-shadow: inset 0 0 0 4px #58afd1; */
+  color: #61C7B5;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.draw-border::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.draw-border:hover {
+  color: #2C528B;
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #2C528B;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  cursor: pointer;
+  font: 700 15px;
+  padding: 12px;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.btn:focus {
+  outline: 1px dotted #61C7B5;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
